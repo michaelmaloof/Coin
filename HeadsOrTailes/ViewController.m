@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "Coin.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *flipButton;
+@property (weak, nonatomic) IBOutlet UIImageView *coinImageView;
+@property Coin *coinToFlip;
+@property NSTimer *flipTimer;
 
 @end
 
@@ -16,12 +21,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.coinToFlip = [[Coin alloc]init];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)flipWasTapped:(id)sender {
+    self.flipButton.hidden = YES;
+    self.coinImageView.hidden = YES;
+    [self flipCoinAnimation];
+}
+
+-(void)flipCoinAnimation{
+    self.flipTimer = [NSTimer scheduledTimerWithTimeInterval: 1.0
+                                                        target: self
+                                                      selector:@selector(displayFlippedCoin)
+                                                      userInfo: nil
+                                                       repeats:YES];
+}
+
+-(void)displayFlippedCoin{
+    [self.coinToFlip flipCoin];
+    self.coinImageView.image = [UIImage imageNamed:self.coinToFlip.imageName];
+    self.coinImageView.hidden = NO;
+    self.flipButton.hidden = NO;
+    [self.flipTimer invalidate];
+    self.flipTimer = nil;
+
 }
 
 @end

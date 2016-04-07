@@ -15,6 +15,7 @@
 		22E0AE731CB677FD00733090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E0AE711CB677FD00733090 /* LaunchScreen.storyboard */; };
 		22E0AE7E1CB677FE00733090 /* HeadsOrTailesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E0AE7D1CB677FE00733090 /* HeadsOrTailesTests.m */; };
 		22E0AE891CB677FE00733090 /* HeadsOrTailesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E0AE881CB677FE00733090 /* HeadsOrTailesUITests.m */; };
+		22E0AE981CB67BE400733090 /* Coin.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E0AE971CB67BE400733090 /* Coin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		22E0AE841CB677FE00733090 /* HeadsOrTailesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadsOrTailesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E0AE881CB677FE00733090 /* HeadsOrTailesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeadsOrTailesUITests.m; sourceTree = "<group>"; };
 		22E0AE8A1CB677FE00733090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22E0AE961CB67BE400733090 /* Coin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coin.h; sourceTree = "<group>"; };
+		22E0AE971CB67BE400733090 /* Coin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				22E0AE671CB677FD00733090 /* AppDelegate.m */,
 				22E0AE691CB677FD00733090 /* ViewController.h */,
 				22E0AE6A1CB677FD00733090 /* ViewController.m */,
+				22E0AE961CB67BE400733090 /* Coin.h */,
+				22E0AE971CB67BE400733090 /* Coin.m */,
 				22E0AE6C1CB677FD00733090 /* Main.storyboard */,
 				22E0AE6F1CB677FD00733090 /* Assets.xcassets */,
 				22E0AE711CB677FD00733090 /* LaunchScreen.storyboard */,
@@ -272,6 +277,7 @@
 			files = (
 				22E0AE6B1CB677FD00733090 /* ViewController.m in Sources */,
 				22E0AE681CB677FD00733090 /* AppDelegate.m in Sources */,
+				22E0AE981CB67BE400733090 /* Coin.m in Sources */,
 				22E0AE651CB677FD00733090 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

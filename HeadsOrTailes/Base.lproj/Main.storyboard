@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,47 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heads" translatesAutoresizingMaskIntoConstraints="NO" id="82S-lb-00m">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="8Uf-Fc-qWM"/>
+                                    <constraint firstAttribute="width" constant="200" id="nna-d8-pVc"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAk-zO-bXz">
+                                <rect key="frame" x="240" y="500" width="120" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="5cE-bE-irI"/>
+                                    <constraint firstAttribute="height" constant="70" id="tUL-tn-7Ix"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="45"/>
+                                <state key="normal" title="Flip">
+                                    <color key="titleColor" red="0.18716186267672502" green="0.52599394633507845" blue="0.20650246116235962" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="upk-6b-UEu"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="82S-lb-00m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KRT-de-RNz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bAk-zO-bXz" secondAttribute="bottom" constant="30" id="WZP-qb-JTH"/>
+                            <constraint firstItem="bAk-zO-bXz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b9q-tM-X01"/>
+                            <constraint firstItem="82S-lb-00m" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gHD-Q1-xAk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="coinImageView" destination="82S-lb-00m" id="gIG-0u-C6l"/>
+                        <outlet property="flipButton" destination="bAk-zO-bXz" id="nup-1q-ccP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Heads" width="300" height="300"/>
+    </resources>
 </document>
