@@ -24,11 +24,32 @@
                                     <constraint firstAttribute="width" constant="200" id="wP0-uM-Kcv"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CqY-bD-TvQ">
+                                <rect key="frame" x="87" y="500" width="342" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="VmD-2U-SB7"/>
+                                    <constraint firstAttribute="height" constant="70" id="uG8-3X-7tq"/>
+                                    <constraint firstAttribute="height" constant="70" id="wwn-0G-InQ"/>
+                                    <constraint firstAttribute="width" constant="342" id="xdy-hX-oUD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="26"/>
+                                <state key="normal" title="Made by Jetpack Dinosaur">
+                                    <color key="titleColor" red="0.18716186269999999" green="0.52599394629999996" blue="0.20650246119999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="VmD-2U-SB7"/>
+                                        <exclude reference="wwn-0G-InQ"/>
+                                    </mask>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Act-gy-8Zu" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4W4-u8-heh"/>
                             <constraint firstItem="Act-gy-8Zu" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="MlH-Mw-Lhd"/>
+                            <constraint firstItem="CqY-bD-TvQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ior-Mf-5vQ"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="CqY-bD-TvQ" secondAttribute="bottom" constant="10" id="vbw-V1-qOE"/>
                         </constraints>
                     </view>
                 </viewController>
