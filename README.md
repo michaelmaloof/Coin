@@ -1,7 +1,7 @@
 # Coin
 Jetpack Dinosaur Challenge 5 - Code Party #1
 
-I'm writing a book to teach others how to code in objective-c. This is the fifth app the reader will make in the book. This app is called a "Code Party". It is a review (and celebration) of everything the reader has learned so far.
+I'm writing a book to teach others how to code in objective-c. This is the fifth app the reader will make in the book. This app is called a "Code Party". It is a review (and celebration) of everything the reader has learned so far. Any repos with "Jetpack Dinosuar" in the description are part of the book I am writing.
 
 App Description:
 
